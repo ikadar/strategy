@@ -1,0 +1,2 @@
+# strategy
+Strategy pattern implementation
