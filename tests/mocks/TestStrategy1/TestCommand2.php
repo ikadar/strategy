@@ -1,0 +1,18 @@
+<?php
+namespace Tests\Mocks\TestStrategy1;
+
+use IKadar\Strategy\Command;
+use IKadar\Strategy\CommandInterface;
+use IKadar\Strategy\ParameterBag;
+
+class TestCommand2 extends Command implements CommandInterface
+{
+
+    public function execute(): ParameterBag
+    {
+        $a = $this->getParameter()->getItem("a");
+        $a .= " - TestStrategy1/TestCommand2";
+        $this->getParameter()->setItem("a", $a);
+        return $this->getParameter();
+    }
+}
