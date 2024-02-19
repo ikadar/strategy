@@ -1,6 +1,6 @@
 {
   "name": "i-kadar/strategy",
-  "description": "Strategy pattern implementation",
+  "description": "Strategy pattern implementation.",
   "type": "library",
   "license": "Apache-2.0",
   "autoload": {
